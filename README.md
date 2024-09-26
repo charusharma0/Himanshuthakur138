@@ -63,26 +63,50 @@ export default UserContextProvider;
 ```
 2 Wrap Your Application:
 ``` 
- <UserContextProvider>
-     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
- </UserContextProvider>
+import UserContextProvider from "../path/to/UserContextProvider"; // Adjust the import path
+
+function MyApp({ Component, pageProps }) {
+  return (
+    <UserContextProvider>
+      <Component {...pageProps} />
+    </UserContextProvider>
+  );
+}
+
+export default MyApp;
+
 ```
 3 Consume the Context:
 ```
 ##in your submit form you can add this
+import { useContext } from "react";
+import UserContext from "../path/to/UserContext"; // Adjust the import path
+import { useRouter } from "next/router";
+
+const MyForm = () => {
   const { setUser, setValue } = useContext(UserContext);
+  const router = useRouter();
+
   const onSubmit = (data) => {
     setUser(data);
     router.push("/profile");
   };
+
+  return (
+    // Your form JSX here
+  );
+};
+
 ##get the props any where you want by using this
-  const user = useContext(UserContext);
+import { useContext } from "react";
+import UserContext from "../path/to/UserContext"; // Adjust the import path
+
+const SomeComponent = () => {
+  const { user } = useContext(UserContext);
+
+  return <div>User: {user ? user.name : "Guest"}</div>;
+};
+
 ```
 ##Conclusion
 Integrating the Context API into your Next.js application can significantly improve state management and component interaction. By following this guide, you can set up a scalable architecture that enhances maintainability and reusability in your projects. Happy coding!
