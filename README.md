@@ -3,11 +3,10 @@
 This guide illustrates how to implement authentication in a Next.js application using NextAuth.js. The integration covers multiple OAuth providers including Google, Twitter, and GitHub to offer secure and streamlined user sign-ins.
 
 ## About Context Api
-
-
+The React Context API is a built-in feature that allows components to share data without manually passing props through each component. It's useful for sharing data like user authentication, themes, or language settings across an entire app.
+For more detailed information and documentation, visit the [ContextApi Vercel](https://vercel.com/guides/react-context-state-management-nextjs).
 ## Build with
 * [Next js](https://nextjs.org/) - A React framework for server-side rendering and static site generation..
-* [NextAuth.js](https://next-auth.js.org/) - An authentication library for Next.js.
 * [MUI](https://mui.com/) - A comprehensive UI library.
 
 ##Installation
@@ -16,10 +15,6 @@ Install of framework and library
 For Next js 
 ```bash 
 npx create-next-app@latest
-```
-For Next Auth 
-```bash 
-npm install next-auth
 ```
 For Mui 
 ```bash
@@ -37,13 +32,6 @@ Navigate to your project directory and install the necessary npm packages:
 ```
 
 ## Project Scope
-The primary goal of this project is to authenticate users and grant access to pages that require user verification. By integrating NextAuth.js with multiple OAuth providers, this project ensures a secure and user-friendly sign-in process.
+The Context API in React provides a powerful mechanism for sharing data across the component tree without the need for prop drilling. By leveraging context and context providers, developers can streamline state management, improve code maintainability, and enhance the scalability of React applications.
 
-### Configure Authentication Providers
-When setting up OAuth, in the developer admin page for each of your OAuth services, you should configure the callback URL to use a callback path of `{server}/api/auth/callback/{provider}`.
-
- e.g. For Google OAuth you would use: `http://localhost:3000/api/auth/callback/google`.
- 
-A list of configured providers and their callback URLs is available from the endpoint `api/auth/providers`. 
-You can find more information at [Next Auth Providers](https://next-auth.js.org/v3/configuration/providers)
 
