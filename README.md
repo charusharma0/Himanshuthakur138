@@ -1,7 +1,6 @@
 
 # Context Api in a Next.js Application
-This guide illustrates how to implement authentication in a Next.js application using NextAuth.js. The integration covers multiple OAuth providers including Google, Twitter, and GitHub to offer secure and streamlined user sign-ins.
-
+This guide illustrates how to seamlessly integrate the Context API in a Next.js application, empowering you to manage state effortlessly and elevate your app's architecture.
 ## About Context Api
 The React Context API is a built-in feature that allows components to share data without manually passing props through each component. It's useful for sharing data like user authentication, themes, or language settings across an entire app.
 For more detailed information and documentation, visit the [ContextApi Vercel](https://vercel.com/guides/react-context-state-management-nextjs).
