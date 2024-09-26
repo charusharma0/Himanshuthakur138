@@ -1,5 +1,5 @@
 
-# Integrating NextAuth Providers in a Next.js Application
+# Context Api in a Next.js Application
 This guide illustrates how to implement authentication in a Next.js application using NextAuth.js. The integration covers multiple OAuth providers including Google, Twitter, and GitHub to offer secure and streamlined user sign-ins.
 
 ## About Context Api
