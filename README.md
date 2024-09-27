@@ -1,6 +1,7 @@
 
-# Context Api in a Next.js Application
+# Basic Structure of Context Api in Next Js 
 This guide illustrates how to seamlessly integrate the Context API in a Next.js application, empowering you to manage state effortlessly and elevate your app's architecture.
+In this project, I have implemented the Context API with Next.js to manage state effectively. Utilizing Axios for API calls, I fetch data and store it in the Context API state, allowing seamless access to this data across child components.
 ## About Context Api
 The React Context API is a built-in feature that allows components to share data without manually passing props through each component. It's particularly useful for sharing data like user authentication, themes, or language settings across an entire app. 
 For more detailed information and documentation, visit the [ContextApi Vercel](https://vercel.com/guides/react-context-state-management-nextjs).
