@@ -1,4 +1,3 @@
-
 # Basic Structure of Context Api in Next Js 
 This guide illustrates how to seamlessly integrate the Context API in a Next.js application, empowering you to manage state effortlessly and elevate your app's architecture.
 In this project, I have implemented the Context API with Next.js to manage state effectively. Utilizing Axios for API calls, I fetch data and store it in the Context API state, allowing seamless access to this data across child components.
